@@ -36,6 +36,7 @@ enum Gourd{
     -r 
     -g 
     -b 
+    -position
     --
     +rank()
     +getValue()

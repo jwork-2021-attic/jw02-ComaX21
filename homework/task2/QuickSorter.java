@@ -4,6 +4,8 @@ public class QuickSorter implements Sorter{
 
     private int[] a;
 
+    private String plan = "";
+
     @Override
     public void load(int[] a) {
         this.a = a;
@@ -17,14 +19,14 @@ public class QuickSorter implements Sorter{
         plan += "" + i + "<->" + j + "\n";
     }
 
-    private String plan = "";
+    
 
     @Override
     public void sort() {
-        quicksort(0, a.length - 1);
+        quickSort(0, a.length - 1);
     }
 
-    private void quicksort(int begin, int end){
+    private void quickSort(int begin, int end){
         int base = a[begin];
         int pos = begin;
         for (int i = begin + 1; i < end + 1; i++) {
@@ -34,9 +36,9 @@ public class QuickSorter implements Sorter{
             }
         }
         if(begin < pos - 1)
-            quicksort(begin, pos - 1);
+            quickSort(begin, pos - 1);
         if(pos + 1 < end)
-            quicksort(pos + 1, end);
+            quickSort(pos + 1, end);
     }
 
     @Override

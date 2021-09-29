@@ -1,0 +1,65 @@
+@startuml
+
+interface Sorter{
+    +load()
+    +sort()
+    +getPlan()
+}
+
+class BubbleSorter{
+    -int[] a
+    -String plan
+    +load()
+    +sort()
+    +getPlan()
+    -swap()
+}
+
+class QuickSorter{
+    -int[] a 
+    -String plan 
+    +load()
+    +sort()
+    -quickSort
+    +getPlan()
+    -swap()
+}
+Sorter <-- BubbleSorter : 实现
+Sorter <-- QuickSorter : 实现
+
+
+
+class Monster{
+    -r 
+    -g 
+    -b 
+    -position
+    
+    +setPosition()
+    +getPosition()
+    +swapPosition()
+    +toString()
+    +setColor()
+    +getKey()
+}
+
+
+class Position{
+    -Monster monster
+    setMonster()
+}
+
+class Line{
+    -Position[] positions 
+    +put()
+    +toString()
+}
+
+class Snake{
+    -Sorter sorter 
+    +setSorter()
+    +lineUp()
+    -parsePlan()
+}
+
+@enduml

@@ -22,8 +22,8 @@ public class Scene {
 
         Snake snake = new Snake();
 
-        //Sorter sorter = new BubbleSorter();
-        Sorter sorter = new QuickSorter();
+        Sorter sorter = new BubbleSorter();
+        //Sorter sorter = new QuickSorter();
 
         snake.setSorter(sorter);
 
