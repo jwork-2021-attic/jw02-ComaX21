@@ -9,6 +9,19 @@
 1. 类分离的好，对于葫芦娃的信息，只有老爷爷知道，而排序器只知道一串数字，没有访问葫芦娃类。
 2. 类抽象的好，首先有了接口类Linable和Sorter，抽象出了可排队元素和排序器的共同功能，<br>然后在具体的类Gourd和BubbleSorter中实现了接口。
 #### 缺点：
-1. Position类没有必要定义成Line的内部类
-2. 相比于将七个葫芦娃定义为枚举类型，我更倾向于定义为一个类。<br>例如现在我想要把每个葫芦娃的能力也定义出来，<br>这个时候如果定义为类可以通过定义子类进行继承来实现。
-3. 没有看出在Geezer类中定义theGeezer的作用
+1. 相比于将七个葫芦娃定义为枚举类型，我更倾向于定义为一个类。<br>例如现在我想要把每个葫芦娃的能力也定义出来，<br>这个时候如果定义为类可以通过定义子类进行继承来实现。
+2. 不理解在Geezer类中定义theGeezer的作用
+
+
+
+### 任务二类图
+![](http://www.plantuml.com/plantuml/png/ZL91IWKn3Dtt55agqWk8YuykLL06L-AYCxyEvVUtjUaW8bx18tW4yLBYDOmczTTHFdysILudxxsaNM0nkKnhhvGBnUPRCrZeOgRqKG5z1pwQvTu-vqW7DHzjkV0cKFcarE0D8XnFVUzjsws9zFe631TToIwCaAXjHsxkmtkJMftBoGsh_sJWZmvi5T9tbMcxBcl1aTQ_PeH3U7zz-NX-QtuGSxDpLQsVnu0RsraCZn9xYIcYAoxobiGrMHEqtT8C-d8ynqhaVL1TcKwYZxcXERKFl5znMId4ffY6DSTla5W4Rc_cp0KhJPM3xgMEWp9BcihSN4lI1REgBB98vF0p0CELn9FgLP9A9vFHRfxcmeOblUzF)
+
+### 任务二可视化链接
+https://asciinema.org/a/RHrS0YKGopBrJww14pfL2sm9n
+
+### 任务三类图
+![](http://www.plantuml.com/plantuml/png/ZL91JiGm3Bpd5Jw2K3-0EApWY5O2LPnMUqYxeOescuGu5I345tW2Jq1y2l4D37ROK515BuudzSpOpWApJddSEQMipoPTwzv06n8T7nJGT-I2tXmSyXdfefm7ao-SzfG-AjKxZGYdOzSvKrStHBfQW-QapSdw0IAL_PERw_1MnrhdShJzzYyP-AK3iqBDJM6QrsKjE6cQ7pt2CRozFBy_lLO_YBd9lIhMby7ZtdOImuF4Jc8CQBCDF2LnJTO4hQSqWJuTJx4SU1wK5wQpu4AgQCxDFSzNN1OAiIccOSVn2oGMWUlDB3L9tKbPOLcjQJUb9PH-ufYd1ckYrkkj4HuP9dBuReBXGkAiDrUnR2xgX6R_F1V6R-YDVm00)
+
+### 任务三可视化链接
+https://asciinema.org/a/dNSqfchlELKB5IbiqpHuXFEFM
