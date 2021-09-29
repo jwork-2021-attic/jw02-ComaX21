@@ -1,0 +1,36 @@
+@startuml 
+
+participant line
+actor theGeezer
+participant sorter 
+actor one 
+actor two 
+actor three 
+actor four 
+actor five 
+actor six 
+actor seven 
+
+
+line -> line
+note left
+line.positions = new Position[7]
+在队列中创建7个位置
+end note 
+
+one -> line: 站入6位置
+two -> line: 站入3位置
+three -> line: 站入1位置
+four -> line: 站入5位置
+five -> line: 站入2位置
+six -> line: 站入4位置
+seven -> line: 站入0位置
+
+line -> theGeezer: 把队伍信息交给爷爷
+sorter -> theGeezer: 把排序器交给爷爷
+theGeezer -> sorter: 爷爷把葫芦娃的排行顺序交给冒泡排序器
+sorter -> theGeezer: 排序器把排序方法交给爷爷
+theGeezer -> line: 爷爷按照排序方法指挥队伍里的葫芦娃排队
+
+@enduml 
+

@@ -1,0 +1,77 @@
+@startuml
+
+interface Sorter{
+    +load()
+    +sort()
+    +getPlan()
+}
+
+class BubbleSorter{
+    -int[] a
+    -String plan
+    +load()
+    +sort()
+    +getPlan()
+    -swap()
+}
+
+Sorter <-- BubbleSorter :实现
+
+
+interface Linable{
+    +setPosition()
+    +getPosition()
+    +getValue()
+}
+
+enum Gourd{
+    ONE 
+    TWO 
+    THREE 
+    FOUR 
+    FiVE 
+    SIX 
+    SEVEN 
+    --
+    -r 
+    -g 
+    -b 
+    --
+    +rank()
+    +getValue()
+    +getGourdByRank()
+    +setPosition()
+    +getPosition()
+    +swapPosition()
+    +toString()
+}
+
+Linable <-- Gourd :实现
+
+
+class Position{
+    -Linable linable 
+    setLinable()
+}
+
+class Line{
+    -Position[] positions 
+    +put()
+    +get()
+    +toArray()
+    +toString()
+}
+
+Line <-- Position :内部类
+
+class Geezer{
+    -Geezer theGeezer
+    -Sorter sorter 
+    +getTheGeezer() 
+    +setSorter()
+    +lineUp()
+    -parsePlan()
+    -execute()
+}
+
+@enduml

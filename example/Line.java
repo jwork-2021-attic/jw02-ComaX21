@@ -26,7 +26,7 @@ public class Line {
     class Position {
 
         private Linable linable;
-
+        
         Position(Linable linable) {
             this.linable = linable;
         }
@@ -55,7 +55,6 @@ public class Line {
         }
 
         return linables;
-
     }
 
 }
